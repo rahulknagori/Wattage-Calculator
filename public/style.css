@@ -1,0 +1,84 @@
+body {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.container {
+  background-color: #2682bb;
+  width: 70vw;
+  height: auto;
+  margin: auto;
+  border-radius: 15px 50px;
+}
+
+.heading {
+  text-align: center;
+  margin: 2px auto;
+}
+
+.headerBorder {
+  width: 300px;
+  background-color: red;
+  height: 2px;
+  margin: 0 auto;
+}
+
+input {
+  border: 1px solid grey;
+  outline: none;
+}
+
+.oven,
+.lights,
+.television {
+  display: flex;
+  margin-top: 5%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid grey;
+}
+
+.all {
+  width: 20%;
+  margin-left: 0%;
+}
+
+.quantity {
+  margin-left: 5%;
+  padding-right: 5px;
+  width: 26%;
+}
+
+#payment {
+  width: 80%;
+  height: 10%;
+  margin: 2% 5%;
+  font-size: 30px;
+  color: rgb(233, 14, 14);
+}
+
+select {
+  border: 1px solid grey;
+  outline: none;
+  padding: 1%;
+  margin-right: 5%;
+  width: 20%;
+}
+
+.watts {
+  padding-left: 60px;
+  width: 10%;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-small {
+  margin: 2rem auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #26bb93;
+}

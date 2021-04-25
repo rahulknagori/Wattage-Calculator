@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Wattage Calculator</h2>
+        <div class="headerBorder"></div>
+            <div class="oven">
+                <label class="quantity"for="oven">Microwave Oven</label>
+                <input class="all" type="number" name="quantity" id="oven" min="0" max="5" onchange="calculateWatts()">
+                <label class="watts"for="ovenWatts">Watts</label>
+                <select name="watts" id="ovenWatts" onchange="calculateWatts()">
+                    <option>1000 Watts</option>
+                    <option>1500 Watts</option>
+                    <option>2000 Watts</option>
+                </select>
+            </div>  
+            <div class="lights">
+                <label class="quantity"for="Incandescent Lights">Incandescent Lights</label>
+                <input class="all" type="number" name="quantity" id="lights" min="0" max="5" onchange="calculateWatts()">
+                <label class="watts"for="lightWatts">Watts</label>
+                <select name="watts" id="lightWatts" onchange="calculateWatts()">
+                    <option>1000 Watts</option>
+                    <option>1500 Watts</option>
+                    <option>2000 Watts</option>
+                </select>
+            </div>  
+            <div class="television">
+                <label class="quantity"for="television">Television</label>
+                <input class="all" type="number" name="quantity" id="television" min="0" max="5" onchange="calculateWatts()">
+                <label class="watts"for="televisionWatts">Watts</label>
+                <select name="watts" id="televisionWatts" onchange="calculateWatts()">
+                    <option>1000 Watts</option>
+                    <option>1500 Watts</option>
+                    <option>2000 Watts</option>
+                </select>
+            </div> 
+            <div class="button-div">
+                <button class="btn-small" onclick="onButtonClick()">CALCULATE</button>
+            </div>   
+            <h3 style="padding: 50px;">You need a battery of: <span id="payment"></span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
